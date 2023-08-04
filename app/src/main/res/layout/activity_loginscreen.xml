@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="#25225b"
+    tools:context=".Activity.loginscreen">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        app:cardCornerRadius="25dp"
+        app:cardMaxElevation="15dp"
+        android:layout_marginTop="10dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        android:layout_gravity="center"
+        app:cardPreventCornerOverlap="false"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            tools:context=".Activity.MainActivity"
+            tools:ignore="RedundantNamespace">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Welcome Back"
+                android:textColor="#25225b"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign  In To Login"
+                android:layout_marginLeft="18dp"
+                android:textColor="#25225b"
+                android:textStyle="italic"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="#25225b"
+                app:hintTextColor="#25225b"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                app:startIconTint="#25225b">
+
+                <EditText
+                    android:id="@+id/ed1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#25225b"
+                    android:hint="ENROLLMENT NO." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="#25225b"
+                app:hintTextColor="#25225b"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:startIconDrawable="@drawable/baseline_vpn_key_24"
+                app:passwordToggleEnabled="true"
+                app:startIconTint="#25225b">
+
+                <EditText
+                    android:id="@+id/ed2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="PASSWORD"
+                    android:textColor="#25225b"
+                    android:inputType="textPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forget Password?"
+                android:gravity="end"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#25225b"
+                android:textStyle="bold"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:backgroundTint="#25225b"
+                android:textColor="@color/white"
+                android:text="LOGIN"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
